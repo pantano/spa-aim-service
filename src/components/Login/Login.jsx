@@ -50,7 +50,7 @@ export function Login() {
 
             <form >
               <div className='formGroup'  >
-                <label> Email </label>
+                <label htmlFor='email'> Email </label>
                 <div>
                   <Input
                     attribute={{
@@ -65,7 +65,7 @@ export function Login() {
               </div>
 
               <div className='formGroup' >
-                <label> Password </label>
+                <label htmlFor='password'> Password </label>
                 <div>
                   <Input
                     attribute={{
@@ -76,9 +76,9 @@ export function Login() {
                     handleChange={handleChange}
                     param={passwordError}
                   />
-                  {passwordError && <label className='labelError'>
+                  <p className={passwordError ? 'messageError' : 'messageRegular'}>
                   password too short
-                  </label>}
+                  </p>
                 </div>
               </div>
 
