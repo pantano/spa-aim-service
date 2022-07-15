@@ -1,10 +1,11 @@
 .regularInput {
-    width: 100%;
+    width: 98%;
     height: 20px;
     background:rgb(0 0 0 / 0.15);
     border-radius: 3px;
     transition: .3s ease all;
     border: 3px solid transparent;
+
 }
 .regularInput:focus {
     border: 3px solid #0075ff;

@@ -6,16 +6,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-.bgLogin {
-    width: auto;
-    height: 100vh;
-}
-
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 .divLogo{
     text-align: center;
 }
@@ -23,7 +13,6 @@ img {
 .logo {
     width: 10rem;
     height: auto;
-    
 }
 
 .content {
@@ -35,9 +24,17 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
 }
-.title {
+
+.box{
+    width: 300px;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 40px;
+    color: black;
+    box-shadow: rgb(0 0 0 / 30%) 0px 6px 6px;
+}
+
+.headerBox {
     font-weight: bold;
     font-size: 20px;
     line-height: 32px;
@@ -47,17 +44,6 @@ img {
     text-align: center;
 }
 
-.boxLogin{
-    width: 300px;
-    background-color: rgba(255, 255, 255, 0.6);
-    padding: 40px;
-    color: black;
-    box-shadow: rgb(0 0 0 / 30%) 0px 6px 6px;
-   
-    
-}
-
-
 form {
     display: flex;
     flex-direction: column;
@@ -66,8 +52,8 @@ form {
 }
 
 .formGroup{
-    width: 90%;
-    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
 }
 
 label{
@@ -79,10 +65,9 @@ label{
     cursor: pointer;
 }
 
-
 button {
     margin-top: 10px;
-    width: 30%;
+    width: 100%;
     height: 30px;
     line-height: 30px;
     font-weight: 500;
@@ -99,13 +84,24 @@ button:hover {
     box-shadow: 3px 0px 30px rgba(163, 163, 163, 1) ;
 }
 
-.messageRegular {
+.footerBox {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 500;
+    padding: 10px 0 10px 0;
+    text-align: center;
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    
+}
+
+.hiddenMessage {
     font-size: 10px;
     line-height: 10px;
     opacity: 0;
 }
 
-.messageError {
+.errorMessage {
     transition: .3s ease all;
     font-size: 10px;
     line-height: 10px;
